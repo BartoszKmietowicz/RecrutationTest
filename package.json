@@ -1,0 +1,30 @@
+{
+  "name": "recrutationtest",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "copyWasm": "copy-files-from-to --config copy-files-from-to.json",
+    "dev": "npm run copyWasm && vue-cli-service serve",
+    "build": "npm run copyWasm && vue-cli-service build",
+    "preview": "vite preview",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "scichart": "^3.2.0-beta",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.2.47",
+    "copy-files-from-to": "^3.2.1",
+    "prettier": "^2.4.1",
+    "vite": "^5.0.11"
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
+}
